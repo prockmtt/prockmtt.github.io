@@ -1,0 +1,177 @@
+/* HOME aboutme box / projects links styling */
+
+body {
+    /*background: linear-gradient(#F0F7F4,#659b5e, #283f3b);*/
+    margin: 0;
+    padding:0;
+    height:100%;
+    width:100%;
+}
+
+h1, h2, h3, p, a {
+    color: #283f3b;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* .un {
+    display: inline-block;
+}
+  
+.un::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: black;
+    transition: 300ms;
+}
+  
+.un:hover::after {
+    width: 100%;
+} */
+
+#namedesc {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    top: 95px;
+    border-radius: 25px;
+    padding: 30px;
+    padding-top: 15px; padding-bottom: 15px;
+    max-width: 85%;
+    min-height: 30%;
+    /* box doesn't overlap other box when width shrinks */
+    left: 1em;
+    right: 1em;
+    margin: 0 auto;
+    font-size: calc(0.7rem + 0.5vw);
+    text-indent: 10%;
+}
+
+#introbox {
+    flex-grow: 1;
+}
+
+/* quick links styling */
+
+#linksbox {
+    border-radius: 25px;
+    transition: 0.3s;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    align-items:center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#linkinbox {
+    font-size: calc(0.8rem + 1.3vh);
+    padding: 1vw 1vw 1vw 4vw; 
+}
+
+#linkinbox {
+    color: /* #F0F7F4*/#95BF74;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#linkinbox:hover {
+    color:#283f3b /*#95BF74; */;
+}
+
+#divider {
+    position: absolute;
+    top: 330px;
+    height:2px;
+    background-color: #556F44;
+    max-width: 85%;
+    left: 1em;
+    right: 1em;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+#projectsbox {
+    padding: 30px;
+    position: absolute;
+    top: 330px;
+    left: 1em; right: 1em;
+    margin: 0 auto;
+    /* box doesn't overlap other box when width shrinks */
+    font-size: calc(0.8rem + 0.5vw); 
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(10px, auto);
+    max-width: 85%;
+    /* aligns box same as intro box */
+    max-height: 100%;
+    min-height: 40%;
+    /* min makes it so grid never exceeds the size of its container */
+    margin: 0 auto;
+    font-size: calc(0.6rem + 0.5vw);
+} 
+
+#projectsbox h1, h2, p, a {
+    color:#283f3b;
+}
+
+#projectsheader {
+    text-indent:10%;
+}
+
+#pbox {
+    border-radius: 40px;
+    text-align: left;
+    padding: 20px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #95bf74;
+    transition: 0.5s;
+    justify-self:center;
+}
+
+#pbox:hover {
+    /* background-color:rgba(149, 191, 116, 0.8); */
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background:radial-gradient(rgba(149, 191, 116, 0.7), 
+    rgba(149, 191, 116, 1));
+}
+
+#pbox img {
+    max-height: 10em;
+    border-radius: 30px;
+    padding: 1em;
+    align-self: center;   
+}
+
+#pboxtext {
+    transition: 0.3s;
+}
+
+#pboxtext a:hover {
+    color: #556F44;
+}
+
+/* #nightmode {
+    background: none;
+    border:none;
+
+}
+
+#dm {
+    float: left;
+    display: block;
+    max-width:2em;
+    padding: 0.5em 1em;
+    transition: 0.3s;
+} */

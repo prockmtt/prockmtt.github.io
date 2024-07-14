@@ -1,0 +1,22 @@
+#researchcontents {
+    border-radius:30px;
+    padding: 5px;
+    position: absolute;
+    top: 80px;
+    max-width: 80%;
+    left: 1em;
+    right: 1em;
+    margin: 0 auto;
+    font-size: calc(1vw + 1vh);
+}
+
+#re {
+    border-bottom: 3px solid #556F44;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+#hazellink {
+    color: #556F44;
+}
+

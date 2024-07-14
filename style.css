@@ -1,0 +1,165 @@
+/* base styling for elts across site */
+body {
+    margin: 0;
+    height: 100%;
+    font-weight: normal;
+    background-color: #F0F7F4;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* this should make transitions b/w links on the page smooth */
+}
+
+h1, h2 {
+    font-family: "Averia Libre", sans-serif;
+    font-weight: normal;
+}
+
+h3, p, a {
+    font-family: "Molengo", sans-serif;
+    font-weight: normal;
+}
+
+h1, h2, h3, p, a {
+    text-decoration: none;
+    color: #283f3b;
+}
+
+/* TOP BAR STYLING */
+
+.header {
+    top: 0;
+    background-color: #283f3b;
+    /* box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1); */
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    /* ^ makes it so page content shouldn't get stuck under nav menu */
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.header ul a {
+    display: block;
+    padding: 1em;
+    border-right: 1px solid #F0F7F4;
+    transition: 0.3s;
+}
+
+.header ul a:hover {
+    background-color: #556F44;
+}
+
+.header .logo {
+    float: left;
+    display: block;
+    font-size: 2em;
+    padding: 0.5em 1em;
+    transition: 0.3s;
+}
+
+.header a {
+    color: #95BF74;
+    text-decoration: none;
+}
+
+.header a:hover {
+    color:#F0F7F4;
+}
+
+.header .menu {
+    clear:both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+    background: #95BF74;
+    display: block;
+    height: 5px;
+    width: 30px;
+    position: relative;
+    transition: background 0.2s ease-out;
+}
+
+/* TODO: figure out how to make the below less redundant :-( */
+.header .menu-icon .nav-icon:before {
+    background: #95BF74;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    top: 10px;
+}
+
+.header .menu-icon .nav-icon:after {
+    background: #95BF74;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    top: -10px;
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+/* affecting nav icon and overriding previous appearance of hamburger menu when we open menu, to make an X */
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+@media (min-width:55em) {
+    /* TODO: make sure I change this whenever I change size/spacing of nav items,
+    which will affect how text fits on one line */
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 20px 20px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        /* makes links sit on right side of nav bar */
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+
+

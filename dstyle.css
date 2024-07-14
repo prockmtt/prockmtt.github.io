@@ -1,0 +1,116 @@
+/* DESIGN PAGE STYLING */
+body {
+    /* background: linear-gradient(#F0F7F4,#659b5e, #283f3b); */
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-color: #556F44; */
+    background-color: #F0F7F4;
+}
+
+#container {
+    max-width: 85%;
+    background-color: #F0F7F4;
+    height:100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+#deswork {
+    padding-top: 90px;
+    text-align:center;
+    font-size: calc(3.5vw + 3.5vh);
+    color: #283f3b;  
+    max-width: 60%;
+    margin: 0 auto;
+    border-bottom: 3px solid #556F44;
+}
+
+
+#deslinks {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+#deslinks a {
+    text-decoration: none;
+    color: #283f3b;
+    padding: 10px;
+}
+
+#deslinks a:hover {
+    color: #556F44;
+    text-decoration: underline;
+}
+
+.sechead {
+    text-align: center;
+    color: #283f3b;
+    font-size: calc(2vw + 2vh);
+    padding: 10px;
+}
+
+.sechead a {
+    font-family: "Averia Libre", sans-serif;
+    transition: 0.3s;
+}
+
+.sechead a:hover {
+    color:#556F44;;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+    max-width: 75%;
+    margin: 0 auto;
+    /* TODO adjust measurements */
+}
+
+.tmd_covers {
+    /* sets ALL portfolio images to fill container only */
+    max-width: 100%;
+    transition: 0.3s;
+}
+
+.tmd_covers:hover {
+    opacity: 0.8;
+}
+
+.article {
+    /* formatting for ALL article titles/links */
+    text-decoration: none;
+    font-weight: normal;
+    color: #283f3b;
+    /* TODO change text color? */
+}
+
+.article:hover {
+    color: #283f3b;
+}
+
+#box1 {
+    grid-column: 1 / 2;
+    text-align: center;
+    font-size: calc(1.2vw + 1.2vh);
+    transition: 0.3s;
+}
+
+#box2 {
+    grid-column: 2;
+    text-align: center;
+    font-size: calc(1.2vw + 1.2vh);
+}
+
+#disclaimer {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 80%;
+    padding-top: 30px;
+    font-size: calc(0.8vw + 0.8vh);
+}
