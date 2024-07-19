@@ -128,7 +128,7 @@ h1, h2, h3, p, a {
     padding: 20px;
     width: 80%;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     background-color: rgba(149, 191, 116, .95);
     transition: 0.5s;
     justify-self:center;
