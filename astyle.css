@@ -3,6 +3,12 @@ body {
     /* background-color: #283f3b; */
     height: 100%;
     width: 100%;
+    background-image:url("imgs/squiggles.png");
+    background-size: 100%;
+    background-repeat:repeat-y;
+    background-color:rgba(240, 247, 244, 0);
+    background-blend-mode: lighten;
+
 }
 
 h1, h2, h3, p {
@@ -44,8 +50,8 @@ h1, h2, h3, p {
 }
 
 #abtme:hover {
-    --myColor1: #72ae6a;
-    --myColor2: #4c7773;
+    --myColor1: #84bd7d;
+    --myColor2: #648152;
     --myColor3: #283f3b;
 }
 

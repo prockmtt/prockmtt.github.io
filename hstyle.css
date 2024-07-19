@@ -6,6 +6,11 @@ body {
     padding:0;
     height:100%;
     width:100%;
+    background-image:url("imgs/squiggles.png");
+    background-size: 100%;
+    background-repeat:repeat-y;
+    background-color:rgba(240, 247, 244, 0.4);
+    background-blend-mode: lighten;
 }
 
 h1, h2, h3, p, a {
@@ -14,29 +19,12 @@ h1, h2, h3, p, a {
     text-decoration: none;
 }
 
-/* .un {
-    display: inline-block;
-}
-  
-.un::after {
-    content: '';
-    width: 0px;
-    height: 1px;
-    display: block;
-    background: black;
-    transition: 300ms;
-}
-  
-.un:hover::after {
-    width: 100%;
-} */
-
 #namedesc {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    top: 95px;
+    top: 100px;
     border-radius: 25px;
     padding: 30px;
     padding-top: 15px; padding-bottom: 15px;
@@ -48,6 +36,8 @@ h1, h2, h3, p, a {
     margin: 0 auto;
     font-size: calc(0.7rem + 0.5vw);
     text-indent: 10%;
+    border-radius: 40px;
+    background-color: rgba(240, 247, 244, .95);
 }
 
 #introbox {
@@ -84,17 +74,17 @@ h1, h2, h3, p, a {
     color:#283f3b /*#95BF74; */;
 }
 
-#divider {
+/* #divider {
     position: absolute;
-    top: 330px;
+    top: 335px;
     height:2px;
-    background-color: #556F44;
+    background-color: #556f44;
     max-width: 85%;
     left: 1em;
     right: 1em;
     margin: 0 auto;
     border-radius: 2px;
-}
+} */
 
 #projectsbox {
     padding: 30px;
@@ -122,8 +112,15 @@ h1, h2, h3, p, a {
 }
 
 #projectsheader {
-    text-indent:10%;
+    margin: 0 auto;
+    width: 25%;
+    padding: 5px 15px;
+    border-radius: 30px;
+    justify-content: center;
+    text-align:center;
+    background-color: rgba(240, 247, 244, .9); 
 }
+
 
 #pbox {
     border-radius: 40px;
@@ -132,7 +129,7 @@ h1, h2, h3, p, a {
     width: 80%;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background-color: #95bf74;
+    background-color: rgba(149, 191, 116, .95);
     transition: 0.5s;
     justify-self:center;
 }
@@ -143,7 +140,7 @@ h1, h2, h3, p, a {
     border-bottom-left-radius: 60px;
     border-top-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    background:radial-gradient(rgba(149, 191, 116, 0.7), 
+    background:radial-gradient(rgba(149, 191, 116, 0.8), 
     rgba(149, 191, 116, 1));
 }
 
@@ -152,6 +149,10 @@ h1, h2, h3, p, a {
     border-radius: 30px;
     padding: 1em;
     align-self: center;   
+}
+
+#pbox a img:hover {
+    opacity: 80%;
 }
 
 #pboxtext {

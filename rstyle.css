@@ -1,8 +1,17 @@
+body {
+    background-image:url("imgs/squiggles.png");
+    background-size: 100%;
+    background-repeat:repeat-y;
+    background-color:rgba(240, 247, 244, 0);
+    background-blend-mode: lighten;
+}
+
 #researchcontents {
-    border-radius:30px;
-    padding: 5px;
+    border-radius:40px;
+    background-color: #F0F7F4;
+    padding: 30px;
     position: absolute;
-    top: 80px;
+    top: 100px;
     max-width: 80%;
     left: 1em;
     right: 1em;

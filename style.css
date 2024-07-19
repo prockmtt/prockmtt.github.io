@@ -48,7 +48,7 @@ h1, h2, h3, p, a {
 .header ul a {
     display: block;
     padding: 1em;
-    border-right: 1px solid #F0F7F4;
+    border-right: 1px solid #f0f7f4;
     transition: 0.3s;
 }
 
@@ -58,9 +58,11 @@ h1, h2, h3, p, a {
 
 .header .logo {
     float: left;
+    /* background-color:red; */
     display: block;
     font-size: 2em;
     padding: 0.5em 1em;
+    padding-left: 3em;
     transition: 0.3s;
 }
 
@@ -141,7 +143,7 @@ h1, h2, h3, p, a {
     top: 0;
 }
 
-@media (min-width:55em) {
+@media (min-width:40em) {
     /* TODO: make sure I change this whenever I change size/spacing of nav items,
     which will affect how text fits on one line */
     .header li {
