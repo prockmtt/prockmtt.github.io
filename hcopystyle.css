@@ -1,7 +1,8 @@
-/* HOME aboutme box / projects links styling */
-
 body {
-    /*background: linear-gradient(#F0F7F4,#659b5e, #283f3b);*/
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
     margin: 0;
     padding:0;
     height:100%;
@@ -19,32 +20,45 @@ h1, h2, h3, p, a {
     text-decoration: none;
 }
 
-#namedesc {
+#grid_layout {
     position: absolute;
+    top: 7em;
+    align-self: center;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-gap: 80px;
+}
+
+#longbox {
+    /* TODO: figure out if there's a way to make these boxes not take up
+    the whole gridbox they're contained in (/float to top of it) */
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+    gap: 30px;
+}
+
+#name_links {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    top: 100px;
-    border-radius: 25px;
     padding: 30px;
-    padding-top: 15px; padding-bottom: 15px;
-    max-width: 85%;
-    min-height: 30%;
-    /* box doesn't overlap other box when width shrinks */
-    left: 1em;
-    right: 1em;
-    margin: 0 auto;
     font-size: calc(0.7rem + 0.5vw);
     text-indent: 10%;
     border-radius: 40px;
     background-color: rgba(240, 247, 244, .95);
+    max-height:15em;
+    max-width:100%;
+    border: 3px solid #283f3b;;
 }
+
+/* TODO: remove text indent/
+make it so text looks normal if it's not just on one line */
 
 #introbox {
     flex-grow: 1;
 }
-
-/* quick links styling */
 
 #linksbox {
     border-radius: 25px;
@@ -62,9 +76,6 @@ h1, h2, h3, p, a {
 #linkinbox {
     font-size: calc(0.8rem + 1.3vh);
     padding: 1vw 1vw 1vw 4vw; 
-}
-
-#linkinbox {
     color: /* #F0F7F4*/#95BF74;
     text-decoration: none;
     transition: 0.3s;
@@ -74,41 +85,64 @@ h1, h2, h3, p, a {
     color:#283f3b /*#95BF74; */;
 }
 
-#projectsbox {
+#research_preview {
+    background-color: rgba(240, 247, 244, .95);
     padding: 30px;
-    position: absolute;
-    top: 330px;
-    left: 1em; right: 1em;
-    margin: 0 auto;
-    /* box doesn't overlap other box when width shrinks */
-    font-size: calc(0.8rem + 0.5vw); 
+    font-size: calc(0.7rem + 0.5vw);
+    border-radius: 40px;
+    max-height: 15em;
+    transition: 0.3s;
+    border: 3px solid #283f3b;;
+}
+
+
+#des_preview {
+    background-color: rgba(240, 247, 244, .95);
+    padding: 30px;
+    font-size: calc(0.7rem + 0.5vw);
+    border-radius: 40px;
+    max-height: 15em;
+    border: 3px solid #283f3b;
+} 
+
+#des_preview a {
+    transition: 0.3s;
+    color: #556F44;
+}
+
+#research_preview a {
+    transition: 0.3s;
+    color: #556F44;
+}
+
+#research_preview a:hover {
+    color:#95BF74;
+}
+
+#des_preview a:hover {
+    color:#95BF74;
+}
+
+#projectswrapper {
+    padding: 30px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     grid-auto-rows: minmax(10px, auto);
-    max-width: 85%;
     /* aligns box same as intro box */
+    max-width: 100%;
     max-height: 100%;
-    min-height: 40%;
-    /* min makes it so grid never exceeds the size of its container */
-    margin: 0 auto;
     font-size: calc(0.6rem + 0.5vw);
-} 
-
-#projectsbox h1, h2, p, a {
-    color:#283f3b;
 }
 
 #projectsheader {
-    margin: 0 auto;
-    width: 25%;
-    padding: 5px 15px;
+    width:100%;
+    max-width:100%;
     border-radius: 30px;
-    justify-content: center;
-    text-align:center;
-    background-color: rgba(240, 247, 244, .9); 
+    text-align: left;
+    background-color: rgba(240, 247, 244, 0); 
+    font-size:calc(0.5rem + 0.5vw);
 }
-
 
 #pbox {
     border-radius: 40px;
@@ -120,6 +154,7 @@ h1, h2, h3, p, a {
     background-color: rgba(149, 191, 116, .95);
     transition: 0.5s;
     justify-self:center;
+    border: 3px solid #283f3b;
 }
 
 #pbox:hover {
@@ -151,16 +186,6 @@ h1, h2, h3, p, a {
     color: #556F44;
 }
 
-/* #nightmode {
-    background: none;
-    border:none;
 
-}
 
-#dm {
-    float: left;
-    display: block;
-    max-width:2em;
-    padding: 0.5em 1em;
-    transition: 0.3s;
-} */
+

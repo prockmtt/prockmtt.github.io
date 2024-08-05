@@ -17,6 +17,7 @@ body {
     right: 1em;
     margin: 0 auto;
     font-size: calc(1vw + 1vh);
+    border: 3px solid #283f3b;
 }
 
 #re {
