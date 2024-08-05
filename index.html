@@ -41,74 +41,93 @@
                 </ul>
             </nav>
         </header>
-        <div id = "namedesc"> 
-            <div id = "introbox"> 
-                <h1> Matthew Prock</h1>
-                <h3> CS & Cognitive Science @ University of Michigan</h3>
+        <div id = "grid">
+            <div id = "intro"> 
+                <div id = "introbox"> 
+                    <h1> Matthew Prock</h1>
+                    <h3> Computer Science and 
+                        Cognitive Science at the University of Michigan</h3>
+                </div>
+                <div id = "linksbox">
+                    <a id = "linkinbox" href = "imgs/Matthew_Prock_Resume.pdf" target ="_blank"> Resume </a>
+                    <a id = "linkinbox" href = "https://github.com/prockmtt" target = "_blank"> GitHub </a>
+                    <a id = "linkinbox" href = "https://www.linkedin.com/in/prock-matthew/" target = "_blank"> LinkedIn </a>
+                </div>
+
             </div>
-            <div id = "linksbox">
-                <a id = "linkinbox" href = "imgs/Matthew_Prock_Resume.pdf" target ="_blank"> Resume </a>
-                <a id = "linkinbox" href = "https://github.com/prockmtt" target = "_blank"> GitHub </a>
-                <a id = "linkinbox" href = "https://www.linkedin.com/in/prock-matthew/" target = "_blank"> LinkedIn </a>
+            <div id = "research">
+                <h1> I'm interested in research in computer science, HCI, CSCW, and cognitive science. </h1>
+                    <p> My current research experience relates to 
+                        <a href = "research.html"> 
+                            programming language design and development at FPLab</a>, as well as 
+                        <a href = "research.html">
+                            social media influencers & careers at the University
+                        of Michigan School of Information</a>.
+                    </p>
             </div>
-        </div>
-        <div id = "divider"></div>
-        <div id = "projectsbox">
-            <div id = "projectsheader">
-                <h1 > Projects</h1>
+            <div id = "design">
+                <h1> I'm passionate about art and design. </h1>
+                    <p> I've always enjoyed exploring how to create artwork that
+                        makes a positive impact on my communities.
+                    </p>
+                    <h1> a big fat image/link is gonna go here</h1>
+                    <a href = "design.html"> Check out some of my recent 
+                        journalistic illustrations here!</a>
             </div>
-            <div id = "pbox">
-                <img src = "imgs/github_logo.png">
-                <div id = "pboxtext"> 
+            <div id = "pheader">
+                <h1> Projects</h1>
+            </div>
+            <div class = "pbox" id = "pbox1">
+                <div id = "imgbox">
+                    <img src = "imgs/github_logo.png">
+                </div>
+                <div id = "pboxtext">
                     <h2> this site</h2>
                     <p> the home of (most of) my projects, links, 
                     and my design portfolio. hosted on GitHub Pages.</p>
-                    <!-- TODO maybe link to github repo? -->
-                    </span>
                 </div>
+                
             </div>
-            <div id = "pbox">
-                <a href = "snake-game/index.html">
-                    <img src = "imgs/snake-logo.png"></a>
+            <div class = "pbox" id = "pbox2">
+                <div id = "imgbox">
+                    <a href = "snake-game/index.html">
+                        <img src = "imgs/snake-logo.png"></a>
+                </div>
                 <div id = "pboxtext">
                     <h2>snake</h2> 
                     <p> <a href = "snake-game/index.html">exploring basic game 
                         making with JavaScript</a></p>
                 </div>
-                
             </div>
-            <div id = "pbox">
-                <img src = "imgs/p3.png">
+            <div class = "pbox" id = "pbox3">
+                <div id = "imgbox">
+                    <img src = "imgs/p3.png">
+                </div>
                 <div id = "pboxtext">
                     <h2> SQL clone 'SillyQL' </h2>
-                <p> relational database emulating standard structured
-                    query languages, implemented in C++. key functionality 
-                    includes creation/removal of tables,
-                    inserting/deleting keys, joining tables together, 
-                    and generating keys for selective searching/printing. </p>
+                    <p> relational database emulating standard structured
+                        query languages, implemented in C++. key functionality 
+                        includes creation/removal of tables,
+                        inserting/deleting keys, joining tables together, 
+                        and generating keys for selective searching/printing. </p>
                 </div>
-                
             </div>
-            <div id = "pbox">
-                <img src = "imgs/p4.png">
+            <div class = "pbox" id = "pbox4">
+                <div id = "imgbox">
+                    <img src = "imgs/p4.png">
+                </div>
                 <div id = "pboxtext">
                     <h2> drone deliveries </h2>
-                    <!-- TODO: edit this description it kinda sucks -->
+                    <!-- TODO: edit this description it still sucks -->
                     <p> "how do we find the most efficient route for a drone to 
                     deliver packages across multiple regions of campus?"
                     <br>
                     C++ program that calculates MSTs and-- applying heuristics-- 
                     solves the Traveling
-                    Salesperson Problem, in order to
-                    find the optimal delivery path for the drone.</p>
+                    Salesperson Problem, in order to find the optimal 
+                    delivery path for the drone.</p> 
                 </div>
-                
             </div>
-            <div> 
-                <!-- this div acts as a spacer b/w bottom pbox and bottom
-                    of page; TODO find better way to achieve this effect? -->
-            </div>
-            <div> <a href = "home_copy.html"> home copy </a></div>
         </div>
     </body>
 </html>

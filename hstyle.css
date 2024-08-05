@@ -1,7 +1,9 @@
-/* HOME aboutme box / projects links styling */
 
 body {
-    /*background: linear-gradient(#F0F7F4,#659b5e, #283f3b);*/
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
     margin: 0;
     padding:0;
     height:100%;
@@ -9,7 +11,7 @@ body {
     background-image:url("imgs/squiggles.png");
     background-size: 100%;
     background-repeat:repeat-y;
-    background-color:rgba(240, 247, 244, 0.4);
+    background-color:rgba(240, 247, 244, 0.5);
     background-blend-mode: lighten;
 }
 
@@ -19,32 +21,36 @@ h1, h2, h3, p, a {
     text-decoration: none;
 }
 
-#namedesc {
+
+#grid {
     position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    top: 100px;
-    border-radius: 25px;
-    padding: 30px;
-    padding-top: 15px; padding-bottom: 15px;
-    max-width: 85%;
-    min-height: 30%;
-    /* box doesn't overlap other box when width shrinks */
+    top: 7em;
     left: 1em;
     right: 1em;
     margin: 0 auto;
-    font-size: calc(0.7rem + 0.5vw);
-    text-indent: 10%;
-    border-radius: 40px;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 0.6fr 0.5fr 0.9fr 0.9fr;
+    grid-template-areas: 
+    "mart projects"
+    "research p1"
+    "des p2"
+    "des p3"
+    "des p4"
+    ;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+    padding-bottom: 3rem;
+}
+
+#intro {
+    grid-area: mart;
+    border: 3px solid #283f3b;
+    border-radius: 30px;
+    padding: 30px;
     background-color: rgba(240, 247, 244, .95);
 }
-
-#introbox {
-    flex-grow: 1;
-}
-
-/* quick links styling */
 
 #linksbox {
     border-radius: 25px;
@@ -60,11 +66,8 @@ h1, h2, h3, p, a {
 }
 
 #linkinbox {
-    font-size: calc(0.8rem + 1.3vh);
-    padding: 1vw 1vw 1vw 4vw; 
-}
-
-#linkinbox {
+    font-size: calc(0.8rem + 1.2vh);
+    padding: 1vw;
     color: /* #F0F7F4*/#95BF74;
     text-decoration: none;
     transition: 0.3s;
@@ -74,56 +77,62 @@ h1, h2, h3, p, a {
     color:#283f3b /*#95BF74; */;
 }
 
-#projectsbox {
-    padding: 30px;
-    position: absolute;
-    top: 330px;
-    left: 1em; right: 1em;
-    margin: 0 auto;
-    /* box doesn't overlap other box when width shrinks */
-    font-size: calc(0.8rem + 0.5vw); 
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    grid-auto-rows: minmax(10px, auto);
-    max-width: 85%;
-    /* aligns box same as intro box */
-    max-height: 100%;
-    min-height: 40%;
-    /* min makes it so grid never exceeds the size of its container */
-    margin: 0 auto;
-    font-size: calc(0.6rem + 0.5vw);
-} 
-
-#projectsbox h1, h2, p, a {
-    color:#283f3b;
-}
-
-#projectsheader {
-    margin: 0 auto;
-    width: 25%;
-    padding: 5px 15px;
+#research {
+    grid-area: research;
+    border: 3px solid #283f3b;
     border-radius: 30px;
-    justify-content: center;
-    text-align:center;
-    background-color: rgba(240, 247, 244, .9); 
+    padding: 30px;
+    background-color: rgba(240, 247, 244, .95);
+    
 }
 
+#research a {
+    transition: 0.3s;
+}
 
-#pbox {
-    border-radius: 40px;
-    text-align: left;
-    padding: 20px;
-    width: 80%;
+#research a:hover {
+    color:#556F44;
+}
+
+#design {
+    grid-area: des;
+    border: 3px solid #283f3b;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: rgba(240, 247, 244, .95);
+}
+
+#design a {
+    transition: 0.3s;
+}
+
+#design a:hover {
+    color:#556F44;
+}
+
+#pheader {
+    grid-area: projects;
+    justify-self:left;
+    text-indent: 20%; /* TODO make this text actually indent/look right*/
+    text-decoration: 3px underline #283f3b;
+    align-self:center;
+    padding-top: 6em;
+    font-size: calc(1rem + 1vh);
+}
+
+.pbox {
+    border: 3px solid #283f3b;
+    border-radius: 30px;
+    /* display:grid;
+    grid-template-columns: repeat(2, 1fr); */
+    padding: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: rgba(149, 191, 116, .95);
     transition: 0.5s;
-    justify-self:center;
 }
 
-#pbox:hover {
-    /* background-color:rgba(149, 191, 116, 0.8); */
+.pbox:hover {
     border-top-right-radius: 60px;
     border-bottom-left-radius: 60px;
     border-top-left-radius: 8px;
@@ -132,14 +141,26 @@ h1, h2, h3, p, a {
     rgba(149, 191, 116, 1));
 }
 
-#pbox img {
-    max-height: 10em;
-    border-radius: 30px;
-    padding: 1em;
-    align-self: center;   
+#imgbox {
+    max-width: 18em;
+    max-height: 18em;
+    padding-right: 30px;
+    align-self: center;
+    justify-self: center;
+    margin: 0 auto;
 }
 
-#pbox a img:hover {
+.pbox img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 60px;
+}
+
+.pbox a img {
+    transition: 0.3s;
+}
+
+.pbox a img:hover {
     opacity: 80%;
 }
 
@@ -149,18 +170,51 @@ h1, h2, h3, p, a {
 
 #pboxtext a:hover {
     color: #556F44;
+} 
+
+#pbox1 {
+    grid-area: p1;
 }
 
-/* #nightmode {
-    background: none;
-    border:none;
-
+#pbox2 {
+    grid-area: p2;
 }
 
-#dm {
-    float: left;
-    display: block;
-    max-width:2em;
-    padding: 0.5em 1em;
-    transition: 0.3s;
-} */
+#pbox3 {
+    grid-area: p3;
+}
+
+#pbox4 {
+    grid-area: p4;
+}
+
+
+@media only screen and (max-width:50em) {
+    #grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 1fr 1fr 0.2fr 1fr 1fr 1fr 1fr;
+        /* TODO: make sure these boxes always fit content */
+        grid-template-areas:
+        "mart"
+        "research"
+        "des"
+        "projects"
+        "p1"
+        "p2"
+        "p3"
+        "p4"
+    }
+    #pheader {
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width: 60em) {
+    .pbox {
+        display: flex;
+        flex-wrap:wrap-reverse;
+    }
+    #imgbox {
+        padding-right: 0px;
+    }
+}
