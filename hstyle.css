@@ -24,13 +24,13 @@ h1, h2, h3, p, a {
 
 #grid {
     position: absolute;
-    top: 7em;
+    top: 9em;
     left: 1em;
     right: 1em;
     margin: 0 auto;
     max-width: 90%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 5fr 4fr;
     grid-template-rows: 0.3fr 0.6fr 0.5fr 0.9fr 0.9fr;
     grid-template-areas: 
     "mart projects"
@@ -42,6 +42,10 @@ h1, h2, h3, p, a {
     grid-column-gap: 1.5rem;
     grid-row-gap: 2rem;
     padding-bottom: 3rem;
+}
+
+#grid p {
+    font-size: calc(0.8vw + 1vh);
 }
 
 #intro {
@@ -88,10 +92,11 @@ h1, h2, h3, p, a {
 
 #research a {
     transition: 0.3s;
+    color: #95bf74;
 }
 
 #research a:hover {
-    color:#556F44;
+    color:#283f3b;
 }
 
 #design {
@@ -104,10 +109,11 @@ h1, h2, h3, p, a {
 
 #design a {
     transition: 0.3s;
+    color: #95bf74;
 }
 
 #design a:hover {
-    color:#556F44;
+    color:#283f3b;
 }
 
 #pheader {
@@ -164,7 +170,7 @@ h1, h2, h3, p, a {
     opacity: 80%;
 }
 
-#pboxtext {
+#pboxtext a {
     transition: 0.3s;
 }
 
@@ -192,7 +198,7 @@ h1, h2, h3, p, a {
 @media only screen and (max-width:50em) {
     #grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 1fr 1fr 0.2fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 0.5fr 0.5fr 0.2fr 0.8fr 0.8fr 0.8fr 0.8fr;
         /* TODO: make sure these boxes always fit content */
         grid-template-areas:
         "mart"

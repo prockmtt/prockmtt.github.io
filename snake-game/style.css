@@ -98,9 +98,10 @@ margin: 10px 0;
     padding: 10px;
     color: #abcccc;
     text-decoration: none;
-    font-size: calc(1.5vw + 1.5vh)
-;}
+    font-size: calc(1.5vw + 1.5vh);
+    transition: 0.3s;
+}
 
 #homelink:hover {
-    font-weight: bold;
+    color: #c0dcdc;
 }
