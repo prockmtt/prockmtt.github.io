@@ -80,7 +80,26 @@
                     <!-- <br>
                     <p> in theory, some more text can/should go here!
                     </p> -->
-                    
+            </div>
+            <div class = "contact">
+                <div class="c_text">
+                    <h1> want to get in touch?</h1>
+                <p> Feel free to reach out, whether about my projects, 
+                    design/illustration inquiries, or just to say hi! </p>
+                </div>
+                <div id = "c_container">
+                    <form action = "https://api.web3forms.com/submit" method="POST" id = "c_form">
+                        <input type="hidden" name="access_key" value="cbf323ee-9b62-4adc-b5eb-5d70575973d2">
+                        <input type = "text" name = "name" 
+                        Placeholder = "Your Name" class = "contact_input" required>
+                        <input type = "email" name = "email" 
+                        Placeholder = "Your Email" class = "contact_input" required>
+                        <textarea name = "message" 
+                        placeholder = "Type your message here" class = 
+                        "contact_input" required></textarea>
+                        <button type = "submit"> Submit</button>
+                    </form>
+                </div>
             </div>
             <div id = "pheader">
                 <h1> Projects</h1>
@@ -91,8 +110,9 @@
                 </div>
                 <div id = "pboxtext">
                     <h1> this site</h1>
-                    <p> the home of (most of) my projects, links, 
-                    and my design portfolio. hosted on GitHub Pages.</p>
+                    <p> This is the home of most of my programming projects, 
+                        important links, and my design portfolio. 
+                        Hosted on GitHub Pages.</p>
                 </div>
                 
             </div>
@@ -103,8 +123,9 @@
                 </div>
                 <div id = "pboxtext">
                     <h1>snake</h1> 
-                    <p> <a href = "snake-game/index.html">exploring basic game 
-                        making with JavaScript</a></p>
+                    <p> <a href = "snake-game/index.html">
+                        My first foray into basic game-making for the web. 
+                        Made with mostly JavaScript.</a></p>
                 </div>
             </div>
             <div class = "pbox" id = "pbox3">
@@ -113,8 +134,8 @@
                 </div>
                 <div id = "pboxtext">
                     <h1> SQL clone 'SillyQL' </h1>
-                    <p> relational database emulating standard structured
-                        query languages, implemented in C++. key functionality 
+                    <p> A relational database emulating standard structured
+                        query languages, implemented in C++. Key functionality 
                         includes creation/removal of tables,
                         inserting/deleting keys, joining tables together, 
                         and generating keys for selective searching/printing. </p>
@@ -126,14 +147,14 @@
                 </div>
                 <div id = "pboxtext">
                     <h1> drone deliveries </h1>
-                    <!-- TODO: edit this description it still sucks -->
-                    <p> "how do we find the most efficient route for a drone to 
-                    deliver packages across multiple regions of campus?"
+                    <p> "How do we find the most efficient routes for package 
+                    delivery across multiple regions of campus?"
                     <br>
-                    C++ program that calculates MSTs and-- applying heuristics-- 
-                    solves the Traveling
-                    Salesperson Problem, in order to find the optimal 
-                    delivery path for the drone.</p> 
+                    C++ program applying understanding of common algorithms to 
+                    calculate efficient flight paths. Calculates minimum 
+                    spanning trees and solves the Traveling Salesman Problem, 
+                    both optimally, and near-optimally by applying heuristics.
+                    </p> 
                 </div>
             </div>
         </div>

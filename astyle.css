@@ -94,6 +94,7 @@ h1, h2, h3, p {
     color: #F0F7F4;
     transition: 0.3s;
     opacity: 80%;
+    font-size: calc(1.3vw + 1vh);
 }
 
 #linksbox a:hover {
