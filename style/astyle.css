@@ -3,7 +3,7 @@ body {
     /* background-color: #283f3b; */
     height: 100%;
     width: 100%;
-    background-image:url("imgs/squiggles.png");
+    background-image:url("/imgs/squiggles.png");
     background-size: 100%;
     background-repeat:repeat-y;
     background-color:rgba(240, 247, 244, 0);
