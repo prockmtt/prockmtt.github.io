@@ -56,6 +56,10 @@ h1, h2, h3, p, a {
     background-color: rgba(240, 247, 244, .95);
 }
 
+#introbox {
+    font-size: calc(0.9rem + 1vh);
+}
+
 #linksbox {
     border-radius: 25px;
     transition: 0.3s;
@@ -262,7 +266,7 @@ h1, h2, h3, p, a {
 }
 
 
-@media only screen and (max-width:50em) {
+@media only screen and (max-width:60em) {
     #grid {
         grid-template-columns: 1fr;
         grid-template-rows: 0.3fr 0.5fr 0.5fr 0.2fr 0.8fr 0.8fr 0.8fr 0.8fr;

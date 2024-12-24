@@ -142,7 +142,7 @@ h1, h2, h3, p, a {
     top: 0;
 }
 
-@media (min-width:40em) {
+@media (min-width:50em) {
     /* TODO: make sure I change this whenever I change size/spacing of nav items,
     which will affect how text fits on one line */
     .header li {
