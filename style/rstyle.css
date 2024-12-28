@@ -26,7 +26,11 @@ body {
     border-bottom-right-radius: 2px;
 }
 
-#hazellink {
+a {
     color: #556F44;
+    transition: 0.3s;
 }
 
+a:hover {
+    color: #95bf74;
+}
