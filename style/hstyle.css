@@ -48,6 +48,13 @@ h1, h2, h3, p, a {
     font-size: calc(0.8vw + 1vh);
 }
 
+.wrapper {
+    border: 3px solid #283f3b;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: rgba(240, 247, 244, .95);
+}
+
 #intro {
     grid-area: mart;
     border: 3px solid #283f3b;
@@ -76,7 +83,7 @@ h1, h2, h3, p, a {
 .linkinbox {
     font-size: calc(0.8rem + 1.2vh);
     padding: 1vw;
-    color: /* #F0F7F4*/#95BF74;
+    color: #95BF74;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -87,10 +94,10 @@ h1, h2, h3, p, a {
 
 #research {
     grid-area: research;
-    border: 3px solid #283f3b;
+    /* border: 3px solid #283f3b;
     border-radius: 30px;
     padding: 30px;
-    background-color: rgba(240, 247, 244, .95);
+    background-color: rgba(240, 247, 244, .95); */
     
 }
 
@@ -105,10 +112,10 @@ h1, h2, h3, p, a {
 
 #design {
     grid-area: des;
-    border: 3px solid #283f3b;
+    /* border: 3px solid #283f3b;
     border-radius: 30px;
     padding: 30px;
-    background-color: rgba(240, 247, 244, .95);
+    background-color: rgba(240, 247, 244, .95); */
     display: flex;
     flex-flow: column;
 }
@@ -141,8 +148,8 @@ h1, h2, h3, p, a {
 
 #pheader {
     grid-area: projects;
-    justify-self:left;
-    text-indent: 20%; /* TODO make this text actually indent/look right*/
+    /* justify-self:left; */
+    /* text-indent: 20%; TODO make this text actually indent/look right */
     text-decoration: 3px underline #283f3b;
     align-self:center;
     padding-top: 6em;
@@ -179,12 +186,12 @@ h1, h2, h3, p, a {
     margin: 0 auto;
 }
 
-.contact {
+#contact {
     grid-area: contact;
-    border: 3px solid #283f3b;
+    /* border: 3px solid #283f3b;
     border-radius: 30px;
     padding: 30px;
-    background-color: rgba(240, 247, 244, .95);
+    background-color: rgba(240, 247, 244, .95); */
     display:flex;
     flex-direction: column;
 }
@@ -282,9 +289,9 @@ h1, h2, h3, p, a {
         "p4"
         "contact"
     }
-    #pheader {
+    /* #pheader {
         padding-top: 0;
-    }
+    } */
 }
 
 @media only screen and (max-width: 60em) {
