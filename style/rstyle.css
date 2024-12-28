@@ -34,3 +34,15 @@ a {
 a:hover {
     color: #95bf74;
 }
+
+@media only screen and (max-width:60em) { 
+    h1 {
+        font-size: 2.8em;
+    }
+    h3, p, a {
+        font-size: 1.5em;
+    }
+    a {
+        font-size: 1em;
+    }
+}

@@ -44,8 +44,13 @@ h1, h2, h3, p, a {
     padding-bottom: 3rem;
 }
 
-#grid p {
-    font-size: calc(0.8vw + 1vh);
+#grid p, #grid a {
+    font-size: 1.2em;
+}
+
+#grid p a {
+    /* links inside p tags aren't larger than surrounding text */
+    font-size: 1em;
 }
 
 .wrapper {
@@ -61,10 +66,6 @@ h1, h2, h3, p, a {
     border-radius: 30px;
     padding: 30px;
     background-color: rgba(240, 247, 244, .95);
-}
-
-#introbox {
-    font-size: calc(0.9rem + 1vh);
 }
 
 #linksbox {
@@ -94,11 +95,6 @@ h1, h2, h3, p, a {
 
 #research {
     grid-area: research;
-    /* border: 3px solid #283f3b;
-    border-radius: 30px;
-    padding: 30px;
-    background-color: rgba(240, 247, 244, .95); */
-    
 }
 
 #research a {
@@ -112,10 +108,6 @@ h1, h2, h3, p, a {
 
 #design {
     grid-area: des;
-    /* border: 3px solid #283f3b;
-    border-radius: 30px;
-    padding: 30px;
-    background-color: rgba(240, 247, 244, .95); */
     display: flex;
     flex-flow: column;
 }
@@ -133,10 +125,6 @@ h1, h2, h3, p, a {
     opacity: 0.8;
 }
 
-#deslink {
-    font-size: calc(1vw + 1vh);
-}
-
 #design a {
     transition: 0.3s;
     color: #95bf74;
@@ -144,6 +132,50 @@ h1, h2, h3, p, a {
 
 #design a:hover {
     color:#283f3b;
+}
+
+
+#contact {
+    grid-area: contact;
+    display:flex;
+    flex-direction: column;
+}
+
+#c_container {
+    max-width:100%;
+    max-height:fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_input {
+    width:70%;
+    border-radius: 15px;
+    padding:10px;
+    border: 2px solid #283f3b;
+    background-color:#f0f7f4;
+    font-family: "Molengo", sans-serif;
+    margin-top:8px;
+    margin-bottom:8px;
+    transition: 0.2s;
+}
+
+#c_container button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:#f0f7f4;
+    color: #283f3b;
+    border-radius: 25px;
+    border: 2px solid #283f3b;
+    font-family: "Molengo", sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#c_container button:hover {
+    background-color:#95BF74;
 }
 
 #pheader {
@@ -159,8 +191,6 @@ h1, h2, h3, p, a {
 .pbox {
     border: 3px solid #283f3b;
     border-radius: 30px;
-    /* display:grid;
-    grid-template-columns: repeat(2, 1fr); */
     padding: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -186,54 +216,6 @@ h1, h2, h3, p, a {
     margin: 0 auto;
 }
 
-#contact {
-    grid-area: contact;
-    /* border: 3px solid #283f3b;
-    border-radius: 30px;
-    padding: 30px;
-    background-color: rgba(240, 247, 244, .95); */
-    display:flex;
-    flex-direction: column;
-}
-
-#c_container {
-    max-width:100%;
-    max-height:fit-content;
-    display: flex;
-    flex-direction: column;
-    /* TODO: finish watching vid */
-}
-
-.contact_input {
-    width:70%;
-    border-radius: 15px;
-    padding:10px;
-    border: 2px solid #283f3b;
-    background-color:#f0f7f4;
-    font-family: "Molengo", sans-serif;
-    margin-top:8px;
-    margin-bottom:8px;
-    transition: 0.2s;
-}
-
-#c_container button {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color:#f0f7f4;
-    color: #283f3b;
-    border-radius: 25px;
-    border: 2px solid #283f3b;
-    font-family: "Molengo", sans-serif;
-    font-size: calc(0.8vw + 0.8vh);
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#c_container button:hover {
-    background-color:#95BF74;
-}
-
 .pbox img {
     max-width: 100%;
     max-height: 100%;
@@ -256,23 +238,6 @@ h1, h2, h3, p, a {
     color: #556F44;
 } 
 
-#pbox1 {
-    grid-area: p1;
-}
-
-#pbox2 {
-    grid-area: p2;
-}
-
-#pbox3 {
-    grid-area: p3;
-}
-
-#pbox4 {
-    grid-area: p4;
-}
-
-
 @media only screen and (max-width:60em) {
     #grid {
         grid-template-columns: 1fr;
@@ -289,17 +254,17 @@ h1, h2, h3, p, a {
         "p4"
         "contact"
     }
-    /* #pheader {
-        padding-top: 0;
-    } */
-}
-
-@media only screen and (max-width: 60em) {
     .pbox {
         display: flex;
         flex-wrap:wrap-reverse;
     }
     .imgbox {
         padding-right: 0px;
+    }
+    .header {
+        font-size: 0.75em;
+    }
+    .linkinbox {
+        padding: 1.5vw;
     }
 }

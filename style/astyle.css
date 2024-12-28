@@ -56,6 +56,10 @@ h1, h2, h3, p {
     --myColor3: #283f3b;
 }
 
+#abtme p, #abtme a {
+    font-size: 1em;
+}
+
 #introtext {
     font-weight: normal;
     font-size: calc(1vw + 1vh); 
@@ -99,4 +103,19 @@ h1, h2, h3, p {
 
 #linksbox a:hover {
     opacity: 100%;
+}
+
+@media only screen and (max-width:60em) { 
+    #abtme {
+        min-height: 20%;
+    }
+    #abtme img {
+        display: none;
+    }
+    #abtme p, #abtme a {
+        font-size: 1.5em;
+    }
+    #linksbox {
+        justify-content:space-evenly;
+    }
 }

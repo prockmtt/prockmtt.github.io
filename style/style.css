@@ -31,7 +31,6 @@ h1, h2, h3, p, a {
 .header {
     top: 0;
     background-color: #283f3b;
-    /* box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1); */
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -52,9 +51,9 @@ h1, h2, h3, p, a {
     transition: 0.3s;
 }
 
-/* .header ul a:hover {
-    background-color: #556F44;
-} */
+.header ul li {
+    font-size: 1.5em;
+}
 
 .header .logo {
     float: left;
@@ -127,7 +126,8 @@ h1, h2, h3, p, a {
     max-height: 240px;
 }
 
-/* affecting nav icon and overriding previous appearance of hamburger menu when we open menu, to make an X */
+/* affecting nav icon and overriding previous 
+appearance of hamburger menu when we open menu, to make an X */
 .header .menu-btn:checked ~ .menu-icon .nav-icon {
     background: transparent;
 }
@@ -159,6 +159,9 @@ h1, h2, h3, p, a {
     }
     .header .menu-icon {
         display: none;
+    }
+    .header ul li {
+        font-size: 1em;
     }
 }
 
