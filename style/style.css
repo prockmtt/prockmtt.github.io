@@ -67,6 +67,7 @@ h1, h2, h3, p, a {
 .header a {
     color: #95BF74;
     text-decoration: none;
+    font-size: 0.75em;
 }
 
 .header a:hover {
