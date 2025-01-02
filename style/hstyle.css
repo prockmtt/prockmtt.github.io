@@ -38,6 +38,7 @@ h1, h2, h3, p, a {
     "des p2"
     "des p3"
     "contact p4"
+    ". other"
     ;
     grid-column-gap: 1.5rem;
     grid-row-gap: 2rem;
@@ -180,12 +181,20 @@ h1, h2, h3, p, a {
 
 #pheader {
     grid-area: projects;
-    /* justify-self:left; */
-    /* text-indent: 20%; TODO make this text actually indent/look right */
+    position:relative;
+}
+
+#text {
+    position: absolute;
+    bottom: 0;
     text-decoration: 3px underline #283f3b;
     align-self:center;
     padding-top: 6em;
-    font-size: calc(1rem + 1vh);
+    font-size: calc(0.9em + 0.9vh);
+    border-radius: 30px;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: rgba(240, 247, 244, .95);
 }
 
 .pbox {
@@ -252,6 +261,7 @@ h1, h2, h3, p, a {
         "p2"
         "p3"
         "p4"
+        "other"
         "contact"
     }
     .pbox {

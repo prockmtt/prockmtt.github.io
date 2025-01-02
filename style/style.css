@@ -162,9 +162,6 @@ appearance of hamburger menu when we open menu, to make an X */
         display: none;
     }
     .header ul li {
-        font-size: 1em;
+        font-size: 1.3em;
     }
 }
-
-
-
