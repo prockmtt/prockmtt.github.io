@@ -10,6 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href = "/style/style.css" rel = "stylesheet">
         <link href = "/style/hstyle.css" rel = "stylesheet">
+        <link href = "/style/interactivity.css" rel = "stylesheet">
         <!-- fonts  -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +22,7 @@
     <body>
         <div id = "pagetop"></div>
         <header class = "header">
-            <a href = "index.html" class = "logo">matthew prock</a>
+            <a href = "index.html" class = "logo ping">matthew prock</a>
             <nav id = "navbar" class = "navbar">
                 <input class = "menu-btn" id = "menu-btn" type = "checkbox">
                 <label class = "menu-icon" for = "menu-btn">
@@ -31,28 +32,29 @@
                     classic hamburger for the menu -->
                 </label>
                 <ul class = "menu">
-                    <li> <a href = "index.html"> Home </a></li>
-                    <li><a href = "about.html"> About me </a></li>
-                    <li><a href = "design.html"> Design work </a></li>
-                    <li><a href = "research.html"> Research </a></li>
+                    <li> <a class="vibrate-1" href = "index.html"> Home </a></li>
+                    <li><a class="zoomies" href = "about.html"> About me </a></li>
+                    <li><a class="heartbeat" href = "design.html"> Design work </a></li>
+                    <li><a class="blink-1" href = "research.html"> Research </a></li>
                 </ul>
             </nav>
         </header>
         <div id = "grid">
-            <div id = "intro" class="wrapper"> 
-                <div id = "introbox"> 
+            <div id = "intro" class="wrapper color-change-2x"> 
+                <div id = "introbox "> 
                     <h1> Matthew Prock</h1>
                     <p> Computer Science and 
                         Cognitive Science at the University of Michigan<p>
                 </div>
                 <div id = "linksbox">
-                    <a class = "linkinbox" href = "imgs/Resume_Matthew_Prock.pdf" target ="_blank"> Resume </a>
-                    <a class = "linkinbox" href = "https://github.com/prockmtt" target = "_blank"> GitHub </a>
+                    <a class = "linkinbox zoomies-far" href = "imgs/Resume_Matthew_Prock.pdf" target ="_blank"> Resume </a>
+                    <a class = "linkinbox wobble-ver-right" href = "https://github.com/prockmtt" target = "_blank"> GitHub </a>
                     <a class = "linkinbox" href = "https://www.linkedin.com/in/prock-matthew/" target = "_blank"> LinkedIn </a>
                 </div>
 
             </div>
-            <div id = "research" class="wrapper">
+            <div class="x">
+            <div id = "research" class="wrapper y">
                 <h1> I'm interested in research in computer science, HCI, and cognitive science. </h1>
                     <p> My current research experience relates to 
                         <a href = "research.html"> 
@@ -61,6 +63,7 @@
                             social media influencers & careers at the University
                         of Michigan School of Information</a>.
                     </p>
+            </div>
             </div>
             <div id = "design" class="wrapper">
                 <h1> I'm passionate about art and design. </h1>
@@ -100,14 +103,14 @@
                     </form>
                 </div>
             </div>
-            <div id = "pheader">
+            <div id = "pheader" class="y">
                 <!-- TODO make class of above wrapper once I add new box -->
-                <div id = "text">
+                <div id = "text" class="x2">
                     <h1> Projects</h1>
                 </div>
                 
             </div>
-            <div class = "pbox" style="grid-area: p1;">
+            <div class = "pbox flip-scale-up-hor" style="grid-area: p1;">
                 <div class = "imgbox">
                     <a href = "https://github.com/prockmtt/prockmtt.github.io"> 
                         <img src = "imgs/github_logo.png" alt = "The 
