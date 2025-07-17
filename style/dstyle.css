@@ -113,6 +113,10 @@ body {
     max-width: 80%;
     padding-top: 30px;
     font-size: calc(0.8vw + 0.8vh);
+    a {
+        font-size: inherit;
+        font-family: inherit;
+    }
 }
 
 @media (max-width:50em) {
@@ -127,5 +131,8 @@ body {
     }
     #container {
         max-width: 100%;
+    }
+    #disclaimer {
+        font-size: 0.7em;
     }
 }
