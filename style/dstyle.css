@@ -119,6 +119,22 @@ body {
     }
 }
 
+#tmd-portfolio-link {
+    margin: 0 auto;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        transition: 0.3s;
+        font-size: inherit;
+        font-family: inherit;
+    }
+    a:hover {
+        color:#556F44;
+    }
+}
+
 @media (max-width:50em) {
     /* TODO: make sure I change this whenever I change size/spacing of nav items,
     which will affect how text fits on one line */

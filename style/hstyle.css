@@ -34,9 +34,9 @@ h1, h2, h3, p, a {
     grid-template-rows: 0.3fr 0.6fr 0.5fr 0.9fr 0.9fr;
     grid-template-areas: 
     "mart projects"
-    "research p1"
+    "des p1"
     "des p2"
-    "des p3"
+    "research p3"
     "contact p4"
     ". other"
     ;
@@ -194,7 +194,6 @@ h1, h2, h3, p, a {
     border-radius: 30px;
     text-align: center;
     padding: 5px 10px;
-    background-color: rgba(240, 247, 244, .95);
 }
 
 .pbox {
